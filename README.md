@@ -56,13 +56,11 @@ Some ideas for improving the script above script to earn closer to an A are the 
 - List the history of the last 100 commands that have been run.
   - Then sort how frequently they are used.
 
-* Some inspiration for developing shell scripting skills can be found here: https://www.hackerrank.com/domains/shell
+* Some inspiration for developing shell scripting skills (try atleast the medium difficulty ones) can be found here: https://www.hackerrank.com/domains/shell
 
-# Part 2 - VIM and TMUX
+# Programmer's Workflow
 
 <img align="right" width="300px" src="https://joshldavis.com/img/vim/tabs.gif">
-
-(Note this part is ungraded--but you are required to do it!)
 
 Figuring out a good workflow is an important part of becoming a good programmer. Some popular workflows typically involve vim or emacs (and I strongly recommend learning one for this course!). Today, tools have developed sufficiently e.g., it is possible to open a remote folder using Visual Studio Code and get the job done. You are free to get creative but expect limited support from my side or the TAs.
 
@@ -116,13 +114,16 @@ The instructions to get setup are here:
 
 Again, if you have a linux machine you may not need a virtual machine. What is nice about a virtual machine however, is if you mess something up, you can always reboot it and start from scratch very easily.
 
+
+*Bottom line: No excuses to submitting the labs on time. Lab is considered submitted when you do a _git push_ to the corresponding lab repository before the deadline*
+
 # Resources to help
 
 - A pretty good introduction to shell scripting is here: https://www.howtogeek.com/67469/the-beginners-guide-to-shell-scripting-the-basics/ .
 
 # Rubric
 
-* 30% Was your tutorial 1-2 pages (estimate this as 2 regular pieces of printed paper)
+* 40% Was your tutorial 1-2 pages (estimate this as 2 regular pieces of printed paper)
     * (If you decided you were doing something so cool it had to be longer, was this well justifed)
     * If your tutorial is your actual script with comments in it, then it should be able to run. Otherwise, you should also have a script file that can actually be run accompanying your tutorial.
 * 30% Polish
@@ -131,8 +132,6 @@ Again, if you have a linux machine you may not need a virtual machine. What is n
     * Was the writing presented in a clear manner in your own voice (i.e. I should not be able to Google it).
   * (Please indicate in your submission at the top if these tutorials can be shared on our piazza board)
   * (The very brief tutorial example I gave would probably earn a C- at best :) Go beyond!)
-* 10% Take a screenshot of your virtual environment running. Name it 'linux.jpg'
-  * Make sure to 'commit' this file to the repo in this directory.
 
 * Note: Your code **must** run on the Khoury machines. That is where you should test it, and this is where we grade it!
 * Note: You must also commit any additional files into your repository so we can test your code.
