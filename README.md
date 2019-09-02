@@ -1,8 +1,6 @@
 ### TODO Please edit the following information in your assignment
 
 - Name(s):
-- How many hours did it take you to complete this lab?
-- Did you collaborate with any other students/TAs/Professors?
 - Did you use any external resources? (Cite them below)
   - tbd
   - tbd
@@ -19,7 +17,7 @@ Getting familiar with the terminal is a fundamental skill to have. Many of you h
 
 For this assignment, you will be warming up by writing a 1-2 page tutorial on bash scripting. Your tutorial will be embededded in a shell script, explaining how to do something on the terminal that is non-trivial but that can be automated. You will run your script by typing `sh myScript.sh` on the command line as an executable shell script(sh is the GNU Bourne-Again SHell -- type 'man sh' for more information).  You can look at example 'sh' scripts for inspiration on what you can achieve on the web and cite them appropriately. 
 
-The tutorial will be done purely in text and and within a file called 'myscript.sh'. You are required to type your tutorial using a terminal based text editor like 'vim', 'emacs', or 'nano' to write your tutorial (I personally use the vim text editor).
+The tutorial will be done purely in text and and within a file called 'myscript.sh'. You can use any editor of your choice to type your tutorial. However, I strongly recommend a terminal based text editor like 'vim', 'emacs', or 'nano' as there will be many scenarios (both in real world and in the labs) where you are only having a remote terminal access through e.g., ssh.
 
 Examples of a non-trivial scripts
 
@@ -66,7 +64,7 @@ Some ideas for improving the script above script to earn closer to an A are the 
 
 (Note this part is ungraded--but you are required to do it!)
 
-Figuring out a good workflow on Unix, Mac, (and even windows) is an important part of becoming a good programmer. My work environment (and the suggested one so I can help you during class), is to use the combination of the VIM text editor and tmux window manager to program your assignments in.
+Figuring out a good workflow is an important part of becoming a good programmer. Some popular workflows typically involve vim or emacs (and I strongly recommend learning one for this course!). Today, tools have developed sufficiently e.g., it is possible to open a remote folder using Visual Studio Code and get the job done. You are free to get creative but expect limited support from my side or the TAs.
 
 ### Student and Teacher Dialouge
 
@@ -84,17 +82,13 @@ Here are some suggested resources to get started.
 * Tmux tutorial - https://www.youtube.com/watch?v=BHhA_ZKjyxo (11:23)
 * [Vim Cheatsheet](https://vim.rtorr.com/) - A handy cheat sheet for navigting Vim. Practice mastering one thing at a time.
 
-# Part 3 - The Network is down! How to work locally.
+# Part 3 - Internet was down. I couldn't complete my labs!
 
-**new_text {** 
-The idea here is you can ``git clone`` your repository in multiple locations(e.g. once on the khoury servers, and once locally on your Virtual Machine), do a bit of work, and then push your changes online in whatever environment you are in. Then if the khoury servers which you are ssh'ing into are down for any reason, you can do a ``git pull`` in a local linux environment, still make forward progress, then push your changes (Then next time you ssh to the khoury servers, you would do a git pull, and then make updates).
-**}** 
+Sometimes ssh is not available if the internet is not and you don't use a Unix-based operating system. Hmm, how will we then work on our Khoury machines which are in a Linux environment? There are several solutions. It is today possible to run Ubuntu terminal on Windows - https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab
 
-Sometimes ssh is not available if the internet is not. Hmm, how will we then work on our Khoury machines which are in a linux environment? The solution is to install locally (i.e. your desktop machine) a virtual machine. A virtual machine emulates an entire operating system!
+An alternative is to install a virtual machine. A virtual machine emulates an entire operating system!
 
 The instructions to get setup are here:
-
-**Note** If you are on windows and have the Windows Linux Subsystem, you can submit a screenshot of that running. That *should be* sufficient for most things in this course. And if you are using linux...just submit a screenshot of your desktop (You may still find the exercise useful however--especially if you want to test software on multiple OS's).
 
 * First start downloading the operating system I recommend using: Ubuntu https://www.ubuntu.com/download/desktop
   * While our Khoury machines are actually CentOS for the operating system, Ubuntu will work just fine (They core kernel is the same).
