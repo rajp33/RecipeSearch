@@ -113,7 +113,7 @@ Here is a little tutorial on VIM as a resource: https://www.howtoforge.com/vim-b
 
 Note: I use VIM, and have limited knowledge of other editors, but you are free to use what you like. You really should commit to using VIM or emacs for this course--it will serve you well professionally (In practice, you should know one terminal editor very well (Vim or emacs), one text editor very well (sublime, atom, etc.), and one IDE well (Visual Studio, XCode, Netbeans, etc.)).
 
-# Part 4 - The Network is down! How to work locally.
+# Part 4 - Setting up a Virtual Machine locally (Optional but recommended)
 
 Sometimes ssh is not available if the internet is not. Hmm, how will we then work on our Khoury machines which are in a linux environment? The solution is to install locally (i.e. your desktop machine) a virtual machine. A virtual machine emulates an entire operating system!
 
