@@ -1,22 +1,7 @@
 # Terminal Overview
 <img align="right" width="150px" src="./images/Color-of-the-LinkedIn-Logo.jpg">
 
-> "Name 10 terminal commands"
-
-That was a prompt I was given when interviewing for LinkedIn several years ago, and that was not the first time someone had asked me about the terminal at an interview! It's not that you should memorize 10 terminal commands, but rather you should understand that working on the terminal is an essential skill.
-
 In this lab, you are going to perform a few terminal commands to get familiar with the Unix Environment along with some other standard tools used throughout this course (and that you will use in your career!).
-
-# Video tutorial of Lab 1
-
-For this first lab, a video tutorial will be provided because there can be so many new tools/infrastructure being introduced. 
-
-Try your best to work through the lab during class time, but if you get stuck you can follow along the video later on. Remember, labs are due at the start of class the following week--so you get one week to submit your lab. You and your partner should both make individual submissions.
-
-**Playlist starts here!**
-https://www.youtube.com/watch?v=HjZVOWAGgZQ&list=PLvv0ScY6vfd8qupx0owF78ZcbvySvbWfx
-
-<img width="300px" src="./images/playlist.JPG">
 
 ## Part 0 - Obtain the mono repo
 
@@ -170,6 +155,7 @@ Again, if you have a linux machine you may not need a virtual machine. What is n
 
 ## More resources to help
 
+- Mike Shah's video tutorial playlist: https://www.youtube.com/watch?v=HjZVOWAGgZQ&list=PLvv0ScY6vfd8qupx0owF78ZcbvySvbWfx
 - There is a lovely user manual on Virtual Box here: https://www.virtualbox.org/manual/
 - There is another example of installing an older Ubuntu on an older version of virtual box here with pictures: https://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox
 - Installing Ubuntu on virtual box in windows video tutorial: https://www.youtube.com/watch?v=IVquJh3DXUA
@@ -186,8 +172,7 @@ Again, if you have a linux machine you may not need a virtual machine. What is n
   * Make sure to 'add/commit/push' this file to the repo in this directory.
 * Modify the file called 'main.c' in your respository containing the power example.
   * Make sure to 'add/commit/push' this file to the repo in this directory.
-* Take a screenshot of your virtual environment running. Name it 'linux.jpg'
-  * Make sure to 'commit' this file to the repo in this directory.
+
 
 ## Going Further
 
