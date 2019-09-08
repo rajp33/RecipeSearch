@@ -26,7 +26,6 @@ In this lab, you are going to perform a few terminal commands to get familiar wi
   * If for some reason you do not have a Khoury username, [follow these instructions](https://www.khoury.northeastern.edu/systems/getting-started/)
 * After you have successfully ssh'd, you are now running programs on the Khoury servers (i.e. not locally on your machine).
 
-<center><img align="center"  src="./images/ssh.PNG"></center>
 
 ## Part 1.5 - Obtaining your repo (i.e. cloning your repository)
 
