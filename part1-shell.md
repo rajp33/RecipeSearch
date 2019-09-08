@@ -1,11 +1,10 @@
 # Terminal Overview
-<img align="right" width="150px" src="./images/Color-of-the-LinkedIn-Logo.jpg">
 
 In this lab, you are going to perform a few terminal commands to get familiar with the Unix Environment along with some other standard tools used throughout this course (and that you will use in your career!).
 
-## Part 0 - Obtain the mono repo
+## Part 0 - Obtain the Lab files
 
-1. Make sure you have accepted the invitation to the monorepo from the main course page.
+1. Make sure you have accepted the invitation to the Lab assignment from Piazza. You have to do this for every lab as each lab is a separate repo.
 2. Run through the following github tutorial if you are not familiar with git.
   - https://guides.github.com/introduction/git-handbook/
   - This is worth the 15 minutes it takes to avoid headaches later on!
