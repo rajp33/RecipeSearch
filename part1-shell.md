@@ -63,6 +63,8 @@ Try running the following commands (See deliverables section at the end for copy
 
 *Note from instructor:* I included urls to the commands above, but it will almost always be faster for you to search the man pages within your terminal (and if you do not have terminal access, you will want to use the manual pages anyway).
 
+_Hidden easter egg task:_ By default when you ssh into login servers, your prompt looks something like bash-4.xxx$. Change it to display as follows: _your_username@login:present_directory$_ For example, if I am in the cs3650 directory my bash prompt should look like _aanjhan@login:cs3650 $_
+
 ### Navigating the terminal quickly.
 
 Here are some other nice things to know with the terminal.
