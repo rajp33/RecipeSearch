@@ -153,6 +153,8 @@ Some ideas for improving the script above script to earn closer to an A are the 
 
 * Some inspiration for developing shell scripting skills (try atleast the medium difficulty ones) can be found here: https://www.hackerrank.com/domains/shell
 
+**Grading:** The grade will be given based on how well the script is commented, does it run without any bugs on Khoury machines, does it handle monkey (random!) inputs, etc.
+
 
 # Setting up a Virtual Machine locally (Optional but recommended)
 
