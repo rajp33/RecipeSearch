@@ -2,7 +2,7 @@
 
 In this lab, you are going to perform a few terminal commands to get familiar with the Unix Environment along with some other standard tools used throughout this course (and that you will use in your career!).
 
-## Part 0 - Obtain the Lab files
+## The Lab files
 
 1. Make sure you have accepted the invitation to the Lab assignment from Piazza. You have to do this for every lab as each lab is a separate repo.
 2. Run through the following github tutorial if you are not familiar with git.
@@ -10,7 +10,7 @@ In this lab, you are going to perform a few terminal commands to get familiar wi
   - This is worth the 15 minutes it takes to avoid headaches later on!
   - Video guides if needed: https://www.youtube.com/githubguides
 
-## Part 1 - SSH
+## SSH
 
 **I don't care what operating system you use locally as long as you have a terminal and internet access**
 
@@ -27,9 +27,9 @@ In this lab, you are going to perform a few terminal commands to get familiar wi
 * After you have successfully ssh'd, you are now running programs on the Khoury servers (i.e. not locally on your machine).
 
 
-## Part 1.5 - Obtaining your repo (i.e. cloning your repository)
+## Retrieving your repo (i.e. cloning your repository)
 
-When you have successfully ssh'd into your repository (Part 1) you should download a copy of your repository on the Khoury servers. The rough workflow for using git is the following.
+When you have successfully ssh'd into your repository, you should download a copy of your repository on the Khoury servers. The rough workflow for using git is the following.
 
 1. Run `git clone your_repository_url` to establish a git repository on your system. *your_repository_url* is found by clicking the 'green' button on you Monorepo homepage(move one directory up from this folder).
 
@@ -152,7 +152,7 @@ Some ideas for improving the script above script to earn closer to an A are the 
 
 
 
-# Part 4 - Setting up a Virtual Machine locally (Optional but recommended)
+# Setting up a Virtual Machine locally (Optional but recommended)
 
 Sometimes ssh is not available if the internet is not. Hmm, how will we then work on our Khoury machines which are in a linux environment? The solution is to install locally (i.e. your desktop machine) a virtual machine. A virtual machine emulates an entire operating system!
 
@@ -205,12 +205,7 @@ Again, if you have a linux machine you may not need a virtual machine. What is n
 - A pretty good introduction to shell scripting is here: https://www.howtogeek.com/67469/the-beginners-guide-to-shell-scripting-the-basics/ .
 
 
-## Deliverable
 
-* Copy and Paste the output from the command-line interface of you running five different terminal commands above into a file called "output.txt" (no capitalization, exactly as named.)
-  * Make sure to 'add/commit/push' this file to the repo in this directory.
-* Modify the file called 'main.c' in your respository containing the power example.
-  * Make sure to 'add/commit/push' this file to the repo in this directory.
 
 
 ## Going Further
