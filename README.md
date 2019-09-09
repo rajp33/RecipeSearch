@@ -12,7 +12,7 @@
 
 # Rubric
 
-* Task 1: output.txt 20%
+* Task 1: output.txt 20% (copy the output of your commands and paste it in output.txt)
 * Task 2: myscript.sh 40% (well commented, complete without bugs, bonus: one that can accept arguments!)
 * Task 3: main.c 40% (same criteria as above)
 
