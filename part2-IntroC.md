@@ -16,6 +16,7 @@ Complete the 'Learn the Basics' section of the C tutorial on the web from http:/
 - [Functions](http://www.learn-c.org/en/Functions)
 - [Static](http://www.learn-c.org/en/Static)
 
+### Task 3: Power function
 Once you are comfortable write a C program on the Khoury machines in the file **main.c**.
 
 1. The program will contain a function with the signature 'double power(double base, double n)'.
