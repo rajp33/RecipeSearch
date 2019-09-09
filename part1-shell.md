@@ -149,9 +149,9 @@ Some ideas for improving the script above script to earn closer to an A are the 
 - Output some graphical patterns after running the command.
 - List the history of the last 100 commands that have been run.
   - Then sort how frequently they are used.
+- The crazier the better: For example, write a script to crawl a weather site and inform if any critical information (e.g., rain from xx am, carry a jacket etc.)
 
 * Some inspiration for developing shell scripting skills (try atleast the medium difficulty ones) can be found here: https://www.hackerrank.com/domains/shell
-
 
 
 # Setting up a Virtual Machine locally (Optional but recommended)
