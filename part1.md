@@ -46,7 +46,7 @@ When you have successfully ssh'd into your repository (Part 1) you should downlo
 5. Finally, do a `git push` to actually make things happen--meaning everything you have added will go to the github server. You can check your github.com repository to see exactly what I will see. [[git push documentation](https://git-scm.com/docs/git-push)]
 
 
-## Part 2 - The (at least) 10 Commands
+## Task 1 - The (at least) 10 Commands
 
 Try running the following commands (See deliverables section at the end for copying and pasting to [output.txt](./output.txt)).
 
@@ -103,35 +103,53 @@ Here are some suggested resources to get started.
 * [Vim Cheatsheet](https://vim.rtorr.com/) - A handy cheat sheet for navigting Vim. Practice mastering one thing at a time.
 
 
-## Part 3 - Learn-C
-<img align="center"  src="./images/learnc.PNG">
-The main programming language we will be using in this course is "C".
+# Automate (some of) your life
 
-Complete the 'Learn the Basics' section of the C tutorial on the web from http://www.learn-c.org/
-(If for some reason learn-c.org is down, run through the examples provided in the slides)
+Getting familiar with the terminal is a fundamental skill to have. Many of you have various levels of experience using the terminal.
 
-- [Hello, World!](http://www.learn-c.org/en/Hello%2C_World%21)
-- [Variables and Types](http://www.learn-c.org/en/Variables_and_Types)
-- [Arrays](http://www.learn-c.org/en/Arrays)
-- [Multidimensional Arrays](http://www.learn-c.org/en/Multidimensional_Arrays)
-- [Conditions](http://www.learn-c.org/en/Conditions)
-- [Strings](http://www.learn-c.org/en/Strings)
-- [For loops](http://www.learn-c.org/en/For_loops)
-- [While loops](http://www.learn-c.org/en/While_loops)
-- [Functions](http://www.learn-c.org/en/Functions)
-- [Static](http://www.learn-c.org/en/Static)
+For this assignment, you will be warming up by writing a 1-2 page tutorial on bash scripting. Your tutorial will be embededded in a shell script, explaining how to do something on the terminal that is non-trivial but that can be automated. You will run your script by typing `sh myScript.sh` on the command line as an executable shell script(sh is the GNU Bourne-Again SHell -- type 'man sh' for more information).  You can look at example 'sh' scripts for inspiration on what you can achieve on the web and cite them appropriately. 
 
-Once you are comfortable write a C program on the Khoury machines in the file **main.c**.
+The tutorial will be done purely in text and and within a file called 'myscript.sh'. You can use any editor of your choice to type your tutorial. However, I strongly recommend a terminal based text editor like 'vim', 'emacs', or 'nano' as there will be many scenarios (both in real world and in the labs) where you are only having a remote terminal access through e.g., ssh.
 
-1. The program will contain a function with the signature 'double power(double base, double n)'.
-2. Your program will call this function in a loop in the main function, computing the first power(2,1) to power(2,10) and print out these results to the terminal.
-	- Note: Your power function only needs to handle positive values.  
-3. You can compile your program with: `clang main.c -o main` to see if it works. 
-	- You will then type `./main` to run the program.
+Examples of a non-trivial scripts
 
-Here is a little tutorial on VIM as a resource: https://www.howtoforge.com/vim-basics.
+* Sort a particular column of data from a .csv file (e.g. stock prices). Then print out the top ten values, and the average of that column of data.
+* Write a shell script that allows you to query information about your computer system from a menu of options. Users might like to know information like hard drive space, if a graphics card is available, how fast the cpu is, etc.
+* Write a shell script that downloads a webpage (using wget, perhaps to grab some json data), then parses some of the data, and prints it to the terminal. 
+* You can use your imagination to create other examples.
 
-Note: I use VIM, and have limited knowledge of other editors, but you are free to use what you like. You really should commit to using VIM or emacs for this course--it will serve you well professionally (In practice, you should know one terminal editor very well (Vim or emacs), one text editor very well (sublime, atom, etc.), and one IDE well (Visual Studio, XCode, Netbeans, etc.)).
+## Task 2 - myScript.sh
+
+<img width="400px" src="https://cdn-images-1.medium.com/max/1600/1*MaSfT-bQOxfWnKjFPxMg6g.gif">
+
+## Very Brief Example Tutorial (Template)
+(Note this example is fairly trivial, probably worth a C-. You can use it as a template)
+
+```
+# Problem Statement: "Often I have to search for different files and directories within my computer system. 
+#                     In order to do this I use the 'ls' command to help orient myself.
+# Name of command: ls
+# Example of its usage: 
+# -bash-4.2$ ls
+# Lab1  README.md
+
+# Here is the myScript.sh script that can list the directories and how many total directories are in the current folder.
+# usage: sh myScript.sh
+
+ls
+ls | wc -l
+```
+
+Some ideas for improving the script above script to earn closer to an A are the following:
+
+- Print out a 'tree' visualization of the directory you are searching.
+- Output the amount of file space each directory is taking up
+- Output some graphical patterns after running the command.
+- List the history of the last 100 commands that have been run.
+  - Then sort how frequently they are used.
+
+* Some inspiration for developing shell scripting skills (try atleast the medium difficulty ones) can be found here: https://www.hackerrank.com/domains/shell
+
 
 
 # Part 4 - Setting up a Virtual Machine locally (Optional but recommended)
