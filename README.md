@@ -22,7 +22,7 @@
 
 # Grade
 
-** Do not edit this part. The TAs will update your grade here **
+**Do not edit this part. The TAs will update your grade here**
 
 # Feedback Loop
 
