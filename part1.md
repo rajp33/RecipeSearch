@@ -45,7 +45,6 @@ When you have successfully ssh'd into your repository (Part 1) you should downlo
 
 5. Finally, do a `git push` to actually make things happen--meaning everything you have added will go to the github server. You can check your github.com repository to see exactly what I will see. [[git push documentation](https://git-scm.com/docs/git-push)]
 
-A cheatsheet has been added to the repository (Under /ExternalResources) that may be helpful!
 
 ## Part 2 - The (at least) 10 Commands
 
@@ -80,6 +79,29 @@ Calling each of these 'commands' (i.e. ls, sort, cat, etc.) is not really correc
 
 As an example, here is the source code for 'ls': http://git.savannah.gnu.org/cgit/coreutils.git/tree/src/ls.c
 Each of these commands are part of the coreutils package in Unix. If you look through the source tree, you will additionally find many other programs (i.e. terminal commands you run in your shell) here: http://git.savannah.gnu.org/cgit/coreutils.git/tree/src/.
+
+# Programmer's Workflow
+
+<img align="right" width="300px" src="https://joshldavis.com/img/vim/tabs.gif">
+
+Figuring out a good workflow is an important part of becoming a good programmer. Some popular workflows typically involve vim or emacs (and I strongly recommend learning one for this course!). Today, tools have developed sufficiently e.g., it is possible to open a remote folder using Visual Studio Code and get the job done. You are free to get creative but expect limited support from my side or the TAs.
+
+### Student and Teacher Dialouge
+
+*"But I love visual studio, sublime, XCode, Atom, etc."*
+
+*That's great, but you cannot use those in a remote environment easily--so I suggest learning another skill. By all means, use both or multiple tools to write the highest quality code.*
+
+*"Hehe, the professor will never know if I just use notepad. I'll just take a shortcut on this assignment"*
+
+*While that's true you can take a shortcut now, it will eventually catch up to you. I promise this is a good skill to learn! This first assignment is much more lightweight, take the time now to do things properly.*
+
+Here are some suggested resources to get started.
+* (VIM+TMUX Example) https://www.youtube.com/watch?v=YD9aFIvlQYs (16:31)
+* Type *man tmux* in a terminal.
+* Tmux tutorial - https://www.youtube.com/watch?v=BHhA_ZKjyxo (11:23)
+* [Vim Cheatsheet](https://vim.rtorr.com/) - A handy cheat sheet for navigting Vim. Practice mastering one thing at a time.
+
 
 ## Part 3 - Learn-C
 <img align="center"  src="./images/learnc.PNG">
