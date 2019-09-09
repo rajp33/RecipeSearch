@@ -1,6 +1,6 @@
 ### TODO Please edit the following information in your assignment
 
-- Name(s):
+- Name(s):Raj Patel, Kyle Koo
 - Did you use any external resources? (Cite them below)
   - tbd
   - tbd
