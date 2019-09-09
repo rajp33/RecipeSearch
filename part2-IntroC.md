@@ -19,7 +19,7 @@ Complete the 'Learn the Basics' section of the C tutorial on the web from http:/
 ### Task 3: Power function
 Once you are comfortable write a C program on the Khoury machines in the file **main.c**.
 
-1. The program will contain a function with the signature 'double power(double base, double n)'.
+1. Write a function with the signature 'double power(double base, double n)'.
 2. Your program will call this function in a loop in the main function, computing the first power(2,1) to power(2,10) and print out these results to the terminal.
 	- Note: Your power function only needs to handle positive values.  
 3. You can compile your program with: `clang main.c -o main` to see if it works. 
