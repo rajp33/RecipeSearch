@@ -20,7 +20,9 @@
 * Note: You must also commit any additional files into your repository so we can test your code.
   * Points will be lost if you forget!
 
+# Grade
 
+** Do not edit this part. The TAs will update your grade here **
 
 # Feedback Loop
 
