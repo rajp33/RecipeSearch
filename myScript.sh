@@ -2,8 +2,7 @@
 
 KEY="fe68ed4bfeaf4759ac05255e03be4fa3"
 FINDBYINGURL="https://api.spoonacular.com/recipes/findByIngredients"
-FINDRECIPEURL=""
-PARAMS=""
+FINDRECIPEURL="https://api.spoonacular.com/recipes/"
 usage="$(basename "$0") [-m max] [-v] [-e] [-i] ingredient1
       ingredient2 ingredient3...ingredientN |
       run with --help or -h for more help."
@@ -11,15 +10,15 @@ HELP="This program is used to fetch a recipe from spoonacular given the ingredie
 
       -v              specify only vegetarian recipes
       -e              specify only vegan recipes
-      -m              specify max results
-      -i              include recipes that require more ingredients than the
-                      ones specified already"
+      -m              specify max results"
 
 #default optional argument values
 VEGETARIAN=false
 VEGAN=false
-INCLUDE=false
 declare -i MAX=10
+declare DATA=""
+declare -A RECIPELIST
+declare RECIPEDATA=""
 
 #declare ingredient array
 declare -a ING_ARRAY
@@ -33,10 +32,16 @@ parse_input() {
 
   case "$1" in
     "max")
+    if [[ $MAX -gt 20 ]]; then
+      echo "Max results is 20!"
+      MAX="20"
+    else
       MAX="$2"
+    fi
     ;;
     "ingredient")
-      ING_ARRAY+="$2"
+      ING_ARRAY+=("$2")
+      #echo "added $2"
     ;;
   esac
 }
@@ -52,18 +57,79 @@ search_spoonacular() {
   if [[ "$VEGETARIAN" = false && "$VEGAN" = false ]]; then
       BUILTURL+="$FINDBYINGURL?apiKey=$KEY&ingredients="
       for ing in "${ING_ARRAY[@]}"; do
-        BUILTURL+="${ING_ARRAY[$ing]},"
+        BUILTURL+="$ing,"
       done
 
+      #remove trailing comma
       if [[ "$BUILTURL" == *, ]]; then
         BUILTURL=${BUILTURL%?}
       fi
-      echo "$BUILTURL"
-      #curl --request GET "$BUILTURL"
+
+      #add number key
+      BUILTURL+="&number=$MAX"
+
+      #fetch data from server
+      echo "Fetching recipes from Spoonacular"
+      DATA=$(curl --request GET "$BUILTURL")
   fi
 }
 
-#parse arguments
+get_recipe() {
+  #Build get request url for specific recipe
+  BUILDURL=""
+  BUILDURL+="$FINDRECIPEURL$1/information?apiKey=$KEY&includeNutrition=false"
+  #echo $BUILDURL
+  #send request
+  RECIPEDATA=$(curl --request GET "$BUILDURL")
+}
+
+parse_results() {
+  LIST="$(echo $DATA | jq -c -r ".[] | {id: .id, name: .title}")"
+  while read -r line; do
+    #echo "$line"
+    ID="$(echo $line | jq -r '.id')"
+    RECIPELIST[$ID]+="$(echo $line | jq -r '.name')"
+  done <<< "$LIST"
+}
+
+show_recipe() {
+  echo "Recipe Name: $(echo $RECIPEDATA | jq -r '.title')"
+  echo "Ingredients:"
+  echo "$(echo $RECIPEDATA | jq -c -r '.extendedIngredients[] | .original')"
+  echo "Directions: "
+  echo "$(echo $RECIPEDATA | jq -c -r '.instructions')"
+}
+
+show_results() {
+  declare -i count=0
+  echo "Results:"
+  #show recipe names and index
+  for recipe in "${!RECIPELIST[@]}"; do
+    count+=1
+    echo "[$count]${RECIPELIST[$recipe]}"
+  done
+
+  #ask for input
+  echo "Please select a recipe by index to fetch more info about that recipe: "
+  read index
+
+  #check for valid input
+  if [[ $index -gt ${#RECIPELIST[@]} || $index -le 0 ]]; then
+    echo "Invalid Index: $index"
+    exit 1
+  fi
+
+  #find recipe id
+  declare -i ind_count
+  for recipe in "${!RECIPELIST[@]}"; do
+    ind_count+=1
+    if [[ $ind_count -eq $index ]]; then
+      get_recipe $recipe
+      break
+    fi
+  done
+}
+
 
 #show usage if no arguments given
 if [ "$#" == "0" ]; then
@@ -102,11 +168,6 @@ while [[ "$#" > 0 ]]; do
       VEGAN=true
       shift 1
     ;;
-    #handle include argument
-    -i | --include)
-      INCLUDE=true
-      shift
-    ;;
     #handle incorrect optional arguments
     -*)
       show_help
@@ -121,5 +182,12 @@ while [[ "$#" > 0 ]]; do
 done
 
 search_spoonacular
+parse_results
+show_results
+show_recipe
+
+# for recipe in "${!RECIPELIST[@]}"; do
+#   echo "${RECIPELIST[$recipe]} and $recipe"
+# done
 
 exit 0
